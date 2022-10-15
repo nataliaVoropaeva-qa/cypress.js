@@ -10,7 +10,7 @@ describe('Тестирование формы авторизации staya', fun
         cy.contains("Мои заказы");
         })
 })
-it('Проверка проверка на негативный кейс авторизации', function () {
+it('Проверка на негативный кейс авторизации', function () {
         cy.visit('https://staya.dog/');
         cy.get('.header-bottom__right--link').click();
         cy.get('.auth-form > form > [type="email"]').type('natalia.voropaeva@mail.ru');
